@@ -1,36 +1,45 @@
 //your JS code here. If required.
+
 let circ=document.querySelectorAll(".circle")
 let prev=document.querySelector("#prev");
 let next=document.querySelector("#next");
 let line=document.querySelectorAll(".line")
-let i=1,j=0;
 prev.disabled=true
+let i=0,j=0;
 
- circ[0].classList.add("active");
+
+ circ[i].classList.add("active");
 next.addEventListener("click",gonext)
 prev.addEventListener("click",goprev)
 
-function gonext(e) {
+function gonext(e){
 	
+ 	i++
 	circ[i].classList.add("active");
 	line[j].classList.add("change");
-	j++
- 	i++
-	if(i==5){
+	
+	if(i==4){
 		prev.disabled=false
 		next.disabled=true
 	}
+	j++
+	
 }
 function goprev(e) {
-	circ[i-1].classList.remove("active");
-	line[j-1].classList.remove("change");
 	j--;
+	
+	circ[i].classList.remove("active");
+	line[j].classList.remove("change");
+	
 	i--;
-	if(i<5){
+	
+	if(i<4){
 		next.disabled=false
 	}
-	if(i==1){
+	//if(i==1){
+	if(i==0){
 		prev.disabled=true
 	}
+	
 	
 }
