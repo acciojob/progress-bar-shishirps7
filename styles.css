@@ -1,1 +1,45 @@
 /*  your css code here. If applicable */
+.cont{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	padding-inline:14%;
+	/* justify-content:space-around */
+}
+.circle{
+	/* background-color:#3598db; */
+	width:50px;
+	display:flex;
+	align-items:center;
+	justify-content:space-evenly;
+	border:4px solid #e0e0e0;
+	border-radius:50%;
+}
+.circle p{
+	/* background-color:yellow */
+}
+.buttons{
+	display:flex;
+	justify-content:space-evenly;
+	margin-top:50px
+}
+.but{
+	/* width:10%; */
+	background-color:#3598db;
+	color:white;
+	border:none;
+	padding:10px;
+	padding-inline:25px;
+	border-radius:5px;
+}
+.line{
+	height:5px;
+	background-color:#e0e0e0;
+	width:50px;
+}
+.active{
+	border:4px solid #3598db;
+}
+.change{
+	background-color:#3598db;
+}
