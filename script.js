@@ -17,9 +17,12 @@ function gonext(e){
  	i++
 	circ[i].classList.add("active");
 	line[j].classList.add("change");
+	if(i>0){
+		prev.disabled=false
+	}
 	
 	if(i==4){
-		prev.disabled=false
+		
 		next.disabled=true
 	}
 	j++
